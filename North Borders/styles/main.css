@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body * {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h3,
+h4,
+p,
+li,
+label {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Ruthie", cursive;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 4.5rem;
+  color: #fd9b1c;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+/* Header */
+
+#main-head {
+  background: #004b57;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: relative;
+}
+
+nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0rem;
+
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  flex: 1 1 40rem;
+}
+
+.nav-links {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 75%;
+}
+
+/* Hero */
+
+#hero {
+  min-height: 90vh;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-header {
+  display: none;
+  background: #004b57;
+  padding: 2.5rem;
+  line-height: 3rem;
+  border-radius: 2%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.close-btn {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  background: #ffffff;
+  border: none;
+  color: #004b57;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #fd9b1c;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.nav-header a {
+  transition: 0.3s;
+}
+
+.nav-header a:hover {
+  color: #fd9b1c;
+  transition: 0.3s;
+}
+
+.hero-introduction {
+  background: #003c46;
+  text-align: center;
+
+  flex: 2 1 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero-introduction a {
+  padding: 1rem 3rem;
+  border-bottom: 2px solid #ffffff;
+  margin: 0 auto 1rem auto;
+  transition: 0.3s;
+}
+
+.hero-introduction a:hover {
+  padding: 1rem 4rem;
+  color: #fd9b1c;
+  transition: 0.3s;
+}
+
+.hero-image {
+  flex: 1 1 20rem;
+}
+
+.hero-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Gallery */
+
+.gallery-head {
+  background: #004b57c9;
+  text-align: center;
+  padding: 4rem 8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#gallery {
+  min-height: 100vh;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  flex: 1 1 60rem;
+}
+
+/* Footer */
+
+#footer {
+  background: #004b57;
+}
+
+.footer-wrapper {
+  width: 90%;
+  margin: auto;
+  min-height: 12vh;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper h3 {
+  flex: 2 1 20rem;
+}
+
+.footer-wrapper ul {
+  flex: 1 1 20rem;
+}
+
+.footer-socials {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-socials img {
+  width: 50%;
+}
+
+/* Mediq Query */
+
+@media screen and (max-width: 710px) {
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-head {
+    display: none;
+  }
+
+  .footer-wrapper h3 {
+    text-align: center;
+  }
+}

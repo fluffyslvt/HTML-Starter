@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600&display=swap"); */
+/* font-family: "Vollkorn SC", serif; */
+
+:root {
+  --hover-color: #6f718f;
+  --blueish-color: #5e90ea;
+  --dark-color: #111111;
+  --dirty-white: #dfdfdf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62, 5%;
+  font-family: "Alice", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Main Wrapper */
+#main-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/decay.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+/* Header Section */
+#main-head {
+  padding: 1rem;
+  min-height: 10vh;
+  width: 95%;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  flex: 3 1 20rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  padding: 0.5rem;
+  width: 8rem;
+}
+
+.main-nav {
+  flex: 1 1 20rem;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-option {
+  color: var(--dark-color);
+  letter-spacing: 1.25px;
+  font-weight: 550;
+  font-size: 1rem;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px var(--dark-color);
+  transition: color 0.25s;
+}
+
+.currect-wbst {
+  color: var(--blueish-color);
+}
+
+.nav-option:hover {
+  color: var(--hover-color);
+}
+
+/* Main Section */
+#hero {
+  position: relative;
+  min-height: 80vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-wrapper {
+  height: 20rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-wrapper h1 {
+  color: var(--dark-color);
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.music-wrapper a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  margin: 0.25rem;
+  border: 2.5px solid var(--dark-color);
+  border-radius: 5px;
+
+  transition: 0.1s;
+}
+
+.music-wrapper a:hover {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.scroll-wrapper {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+
+  color: var(--dark-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.scroll-img {
+  width: 2.5rem;
+}
+
+/* General Styles for Album Sections */
+.albums {
+  min-height: 100vh;
+  width: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Album Section */
+#album {
+  color: var(--dirty-white);
+  background-image: url(images/beloved.jpg);
+}
+
+.album-info-wrapper {
+  height: 100%;
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.uppertitle {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  text-shadow: var(--dark-color) 1px 1px;
+}
+
+.album-title {
+  color: var(--dark-color);
+  text-shadow: var(--dirty-white) 1px 1px;
+  font-size: 4rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.undertitle {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-shadow: var(--dark-color) 1px 1px;
+}
+
+.album-btns {
+  text-decoration: none;
+  background-color: var(--dark-color);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  margin: 0.25rem;
+  border: 2.5px solid var(--dark-color);
+  border-radius: 5px;
+
+  transition: 0.1s;
+}
+
+.album-btns:hover {
+  background-color: var(--dirty-white);
+  color: var(--dark-color);
+}
+
+/* Second Album Section */
+#second-album {
+  color: var(--dark-color);
+  background-image: url(images/classroom.jpg);
+}
+
+.second-album-info-wrapper {
+  height: 100%;
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.second-uppertitle {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  text-shadow: var(--dirty-white) 1px 1px;
+}
+
+.second-album-title {
+  color: var(--dark-color);
+  text-shadow: var(--dirty-white) 1px 1px;
+  font-size: 4rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.second-undertitle {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-shadow: var(--dirty-white) 1px 1px;
+}
+
+.second-album-btns {
+  text-decoration: none;
+  background-color: var(--dark-color);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  margin: 0.25rem;
+  border: 2.5px solid var(--dark-color);
+  border-radius: 5px;
+
+  transition: 0.1s;
+}
+
+.second-album-btns:hover {
+  background-color: var(--dirty-white);
+  color: var(--dark-color);
+}
+
+/* Footer Section */
+#main-footer {
+  background-color: var(--dark-color);
+  min-height: 32vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-wrapper a {
+  padding: 0.25rem;
+}
+
+.social-link {
+  width: 2rem;
+}
+
+.footer-info-wrapper {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-info-wrapper p {
+  font-size: 0.95rem;
+  padding: 0.5rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252525;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2b2b2b;
+}
+
+/* Media Query */
+@media screen and (max-width: 710px) {
+  .logo-wrapper {
+    justify-content: center;
+  }
+
+  .logo-img {
+    width: 6rem;
+  }
+
+  .second-album-title {
+    font-size: 3rem;
+  }
+}
