@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aim Training - Jetstream Sam</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="logic2_3.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="options-wrapper">
+        <button id="start-btn">Start</button>
+        <input
+          type="number"
+          class="interval-amount"
+          placeholder="Interval (ms)"
+        />
+        <input
+          type="number"
+          class="objects-amount"
+          placeholder="Object Limit"
+        />
+        <input type="text" class="score" placeholder="Score" disabled />
+        <button id="reset-btn">Reset</button>
+      </div>
+      <div class="game-wrapper">
+        <!-- <img src="imgs/jetstream.png" alt="sam" class="sam" /> -->
+      </div>
+    </main>
+
+    <div class="modal hidden">
+      <p>YOU DIED</p>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
